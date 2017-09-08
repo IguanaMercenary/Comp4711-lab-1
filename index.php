@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Index page of lab1 project. Displays the information of students. 
+Three students are created here with varying amounts of information about their 
+person. 
 -->
 <html>
     <head>
