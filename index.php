@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        include('student.php');
+        //Includes the Student class.
+        include('Student.php');
 
         $students = array();
 
@@ -36,8 +37,21 @@ and open the template in the editor.
         $second->add_grade(50);
         $students['a456'] = $second;
         
-        foreach ($students as $student)
+        $third = new Student();
+        $third->surname = "O'Connell";
+        $third->first_name = "Michael";
+        $third->add_email('home', 'moconnell@home.ca');
+        $third->add_email('work1', 'm_oconnell@work.ca');
+        $third->add_email('work2', 'micheocon@altwork.ca');
+        $third->add_grade(90);
+        $third->add_grade(74);
+        $third->add_grade(81);
+        $students['m767'] = $third;
+        
+        //Foreach loop to print out all the students in the students array.
+        foreach ($students as $student) {
             echo $student->toString();
+        }
         ?>
     </body>
 </html>
